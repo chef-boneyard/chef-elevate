@@ -1,0 +1,7 @@
+{
+  "sources": {
+    "elevate": {
+      "path": "./test/cookbooks/elevate"
+    }
+  }
+}

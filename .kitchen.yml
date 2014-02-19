@@ -1,0 +1,15 @@
+---
+driver_plugin: vagrant
+
+driver:
+  synced_folders: [["<%= File.expand_path(File.dirname(__FILE__)) %>", "/build"]]
+
+platforms:
+  - name: centos-6
+    driver_config:
+      box: opscode-centos-6.5
+      box_url: http://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_centos-6.5_chef-provisionerless.box
+suites:
+  - name: default
+    run_list:
+      - recipe[elevate]

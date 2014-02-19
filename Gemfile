@@ -4,6 +4,7 @@ source 'https://rubygems.org'
 gemspec
 
 group(:test) do
+  gem 'berkshelf'
   gem 'rspec'
   gem 'rake'
   gem 'guard'
@@ -11,5 +12,6 @@ group(:test) do
   gem 'ruby_gntp'
   gem 'test-kitchen', '~> 1.0'
   gem 'kitchen-vagrant', '~> 0.11'
+  gem 'serverspec'
 end
 

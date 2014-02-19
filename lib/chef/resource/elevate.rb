@@ -6,6 +6,7 @@ class Chef
       def initialize(name, run_context=nil)
         super
         @resource_name = :elevate
+        @provider = Chef::Provider::Elevate::Sudo
       end
     end
   end
